@@ -17,27 +17,47 @@
 <!--Si tienes dudas de como hacer un formulario, puedes consultar:
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
+
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
+<fieldset>
+<label for="mismo_id">Nombre:</label>
+<input type="text" name="name" id="nombre">
+<label for="mismo_id">Apellido:</label>
+<input type="text" name="lastname" id="apellido"><br>
+<label for="mismo_id">Sexo:</label>
+<input type="radio" name="genero" value="hombre">Hombre
+<input type="radio" name="genero" value="mujer">Mujer<br>
+<label for="mismo_id">Edad:</label>
+<input type="number" name="age" id="edad"><br>
+<label for="mismo_id">Email:</label>
+<input type="mail" name="email" id="mail"><br>
+<label for="mismo_id">Usuario:</label>
+<input type="text" name="user" id="usuario"><br>
+<label for="mismo_id">Contraseña:</label>
+<input type="password" name="password" id="contrasenia"><br>
+<label for="mismo_id">Confirmar Contraseña:</label>
+<input type="password" name="passqord" id="contrasenia"><br>
 
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
+</fieldset>
+<h3>Tipo de servicio: </h3>
+<input list="service" name="service" id="servicio">
+<datalist id="service">
+<option value="Free">
+<option value="Standard">
+<option value="Premium">
+</datalist>
+<h3>Tipo de Tema: </h3>
+<input list="tema" name="tema" id="temas">
+<datalist id="tema">
+<option value="Política">
+<option value="Negocios">
+<option value="tecnologia">
+<option value="salud">
+</datalist>
 
-Agregue un comentario:
+<h3>Agregue un comentario:</h3>
+<input type="text" name="coment" id="comentario">
 
-Boton de Enviar
-
-
+<button>Enviar</button>
 </body>
 </html>
